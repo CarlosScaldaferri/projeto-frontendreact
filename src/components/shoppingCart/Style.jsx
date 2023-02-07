@@ -4,9 +4,9 @@ export const ConteinerStyled = styled.div`
   display: flex;
   flex-direction: column;
   width: 1000px;
-  height: 800px;
   margin-top: 20px;
   gap: 20px;
+  margin-bottom: 20px;
 `;
 export const ProductsGeneral = styled.div`
   display: flex;
@@ -121,7 +121,7 @@ export const PriceWithDiscount = styled.div`
 export const PriceInstallment = styled.div`
   color: black;
   font-size: small;
-  width: 130px;
+  width: 140px;
   text-align: right;
 `;
 export const ColunmProductPrice = styled.div`
@@ -188,4 +188,7 @@ export const PurchaseButton = styled.button`
   color: white;
   font-size: x-large;
   border: none;
+`;
+export const ButtonCancel = styled.div`
+  text-decoration: underline;
 `;

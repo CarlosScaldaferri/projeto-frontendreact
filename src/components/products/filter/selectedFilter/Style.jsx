@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import buttonCancel from "../../../../../public/Img/general/ButtonCancel.png";
 
-export const SelectedFiltersStyled = styled.div`
+export const Line = styled.div`
   display: flex;
   height: 1px;
   border: 0.1em solid gray;
@@ -12,7 +12,7 @@ export const ContainerStyled = styled.div`
   justify-content: flex-end;
   height: 88px;
   min-height: 88px;
-  width: 595px;
+  width: 500px;
   gap: 12px;
 `;
 export const ButtonFilterStyled = styled.div`
