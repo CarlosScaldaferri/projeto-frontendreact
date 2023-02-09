@@ -28,7 +28,6 @@ export const DataStyled = styled.div`
   justify-content: center;
   width: 242px;
   background-color: white;
-  border: 1px solid yellow;
 `;
 export const Img = styled.img`
   width: 200px;

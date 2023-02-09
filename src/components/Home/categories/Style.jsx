@@ -10,8 +10,8 @@ export const Container = styled.a`
 export const Navigation = styled.nav`
   display: flex;
   width: fit-content;
-  gap: 13px;
-  font-family: Arial, Helvetica, sans-serifs;
+  gap: 15px;
+  font-family: Roboto, Helvetica, sans-serifs;
   font-weight: bold;
 `;
 export const A = styled.a`
@@ -32,7 +32,6 @@ export const CategoryConteiner = styled.div`
   width: fit-content;
   height: fit-content;
   background-color: black;
-  border: 1px solid yellow;
 `;
 export const Img = styled.img`
   width: 130px;

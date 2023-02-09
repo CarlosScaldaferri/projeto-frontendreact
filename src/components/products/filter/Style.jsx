@@ -12,14 +12,14 @@ export const FilterTitleStyled = styled.div`
   color: white;
   font-size: x-large;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto, Helvetica, sans-serif;
 `;
 export const CategoriesStyled = styled.div`
   text-align: start;
   color: white;
   font-size: large;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto, Helvetica, sans-serif;
 `;
 export const FilterContainerStyled = styled.div`
   display: flex;

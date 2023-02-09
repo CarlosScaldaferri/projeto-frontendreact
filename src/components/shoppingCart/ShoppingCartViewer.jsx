@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   ConteinerStyled,
   ProductsConteiner,
@@ -25,7 +25,6 @@ import {
   PaymentConteiner,
   ProductsGeneral,
   ProductGeneral,
-  SummaryTitle,
   Title,
   SummaryQuantity,
   SummaryPrice,
@@ -39,24 +38,25 @@ import {
   PurchaseButton,
   ButtonCancel,
   ContainerProducts,
-  Line,
 } from "./Style";
 import subtraction from "/Img/general/Subtraction.png";
 import addition from "/Img/general/Addition.png";
 
 export default function ShoppingCartViewer(props) {
   window.scrollTo(0, 0);
+
   const product = JSON.parse(localStorage.getItem("products")).filter(
     (e) => e.id == props.idProduct
   );
 
-  const [shoppingCart, setShoppingCart] = useState(
-    JSON.parse(
-      localStorage.getItem("shoppingcart") !== null
-        ? localStorage.getItem("shoppingcart")
-        : "[]"
-    )
-  );
+  const [shoppingCart, setShoppingCart] = useState([]);
+
+  useEffect(() => {
+    let a = localStorage.getItem("shoppingcart");
+    if (a) {
+      setShoppingCart(a);
+    }
+  }, []);
 
   if (
     Number(props.idProduct) !== 0 &&
@@ -139,16 +139,16 @@ export default function ShoppingCartViewer(props) {
     }
   }
 
-  function handleCalcelClick(e, index) {
-    const deletedItem = shoppingCart.slice(index, 1);
-    localStorage.setItem(
-      "shoppingcart",
-      shoppingCart.filter((e) => e.idProduct !== deletedItem[0].idProduct)
-    );
+  function handleCalcelClick(element) {
+    let a = shoppingCart.filter((e) => e.idProduct !== element.idProduct);
+    if (a.length == 0) {
+      localStorage.removeItem("shoppingcart");
+    }
 
-    setShoppingCart(
-      shoppingCart.filter((e) => e.idProduct !== deletedItem[0].idProduct)
-    );
+    setShoppingCart(a);
+
+    console.log(shoppingCart);
+    console.log(a);
   }
 
   return (
@@ -201,9 +201,7 @@ export default function ShoppingCartViewer(props) {
                           ></QuantityIncrement>
                         </QuantityIncrementConteiner>
                       </StockQuantityConteiner>
-                      <ButtonCancel
-                        onClick={() => handleCalcelClick(item, index)}
-                      >
+                      <ButtonCancel onClick={() => handleCalcelClick(item)}>
                         Remove
                       </ButtonCancel>
                     </QuantityConteiner>

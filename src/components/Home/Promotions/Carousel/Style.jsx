@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Promotions from "/Img/general/Promotions.gif";
+import Promotions from "/Img/general/Promotions.png";
 
 export const ContainerStyled = styled.div`
   display: flex;
@@ -35,26 +35,41 @@ export const DataStyled = styled.div`
 `;
 export const NameStyled = styled.span`
   display: flex;
-  font-size: larger;
-  font-family: Arial, Helvetica, sans-serifs;
+  font-size: 2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    1px 1px 0 #000;
+`;
+
+export const NameBrandStyled = styled.span`
+  display: flex;
+  font-size: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: bold;
 `;
+
 export const DataDescription = styled.div`
+  display: flex;
+`;
+export const Name = styled.div`
   display: flex;
   flex-direction: column;
   margin: 10px;
   color: white;
-  justify-content: center;
+  gap: 30px;
 `;
 export const DiscountStyled = styled.div`
-  font-size: 3rem;
   color: white;
-  grid-column: 1;
-  grid-row: 1;
+  font-size: 3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    1px 1px 0 #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 export const Img = styled.img`
-  grid-column: 1;
-  grid-row: 1;
   width: 275px;
   height: 275px;
   margin: 20px;
@@ -90,5 +105,35 @@ export const PriceStyled = styled.div`
   align-items: center;
 `;
 export const PriceDescount = styled.div`
-  font-size: x-large;
+  font-size: 2rem;
+  background-color: yellow;
+  border-radius: 10px;
+  padding: 10px;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+`;
+export const Description = styled.div`
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    1px 1px 0 #000;
+  font-size: 1rem;
+  height: auto;
+`;
+
+export const DiscountConteiner = styled.div`
+  gap: 0;
+  display: flex;
+  flex-direction: column;
+`;
+export const PriceConteiner = styled.div`
+  gap: 30px;
+  display: flex;
+  align-items: center;
+`;
+export const PriceDicount = styled.div`
+  display: flex;
+`;
+export const DescriptionPrice = styled.div`
+  display: flex;
 `;

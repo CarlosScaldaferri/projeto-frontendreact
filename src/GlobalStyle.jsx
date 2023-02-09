@@ -13,8 +13,8 @@ export const ContainerStyled = styled.div`
   flex-direction: column;
   align-items: centrer;
   justify-content: center;
-  background-color: black;
-  background-image: url(${Backgroud});
+  background-color: #040056;
+  /* background-image: url(${Backgroud}); */
   background-size: cover;
   background-repeat: no-repeat;
   gap: 30px;

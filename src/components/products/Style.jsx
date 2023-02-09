@@ -23,7 +23,7 @@ export const TitleStyled = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
   color: black;
-  font-family: Arial, Helvetica, sans-serifs;
+  font-family: Roboto, Helvetica, sans-serifs;
   font-size: xx-large;
   text-align: start;
 `;

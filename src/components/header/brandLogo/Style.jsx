@@ -26,12 +26,12 @@ export const MainLogoTextStyled = styled.label`
   font-size: x-large;
   font-style: italic;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serifs;
+  font-family: Roboto, Helvetica, sans-serifs;
 `;
 export const SecondaryLogoTextStyled = styled.label`
   color: white;
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serifs;
+  font-family: Roboto, Helvetica, sans-serifs;
 `;
 export const InnerContainerStyled = styled.div`
   display: grid;

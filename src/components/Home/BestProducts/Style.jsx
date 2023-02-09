@@ -34,8 +34,8 @@ export const TitleStyled = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  color: black;
-  font-family: Arial, Helvetica, sans-serifs;
+  color: white;
+  font-family: Roboto, Helvetica, sans-serifs;
   font-weight: bold;
   font-size: xx-large;
   text-align: start;

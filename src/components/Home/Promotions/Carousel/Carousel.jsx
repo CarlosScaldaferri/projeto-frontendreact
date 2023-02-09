@@ -9,12 +9,18 @@ import { Img } from "./Style";
 import { DataDescription } from "./Style";
 import NextBtn from "../../../../../public/Img/General/Next.png";
 import PrevBtn from "../../../../../public/Img/General/Prev.png";
-import { DiscountStyled } from "./Style";
+import { Description } from "./Style";
 import React, { useState, useEffect } from "react";
 import { BodyCarouselStyed } from "./Style";
-import { InnerPriceStyled } from "./Style";
-import { PriceStyled } from "./Style";
-import { PriceDescount } from "./Style";
+import {
+  NameBrandStyled,
+  InnerPriceStyled,
+  PriceDescount,
+  PriceConteiner,
+  Name,
+  DiscountConteiner,
+  DiscountStyled,
+} from "./Style";
 
 export default function Carrousel() {
   const products = JSON.parse(localStorage.getItem("products")).filter(
@@ -62,14 +68,47 @@ export default function Carrousel() {
                 <DataStyled>
                   <Img src={item.images[0]} alt={item.description} />
                   <DataDescription>
-                    <NameStyled>{item.name}</NameStyled>
-                    <br />
-                    <span>{item.description}</span>
-                    <br />
+                    <Name>
+                      <NameBrandStyled>
+                        {item.color}{" "}
+                        {
+                          JSON.parse(localStorage.getItem("categories")).filter(
+                            (e) => e.id == item.idCategory
+                          )[0].name
+                        }{" "}
+                        from{" "}
+                        {
+                          JSON.parse(localStorage.getItem("brands")).filter(
+                            (e) => e.id == item.idBrand
+                          )[0].name
+                        }
+                      </NameBrandStyled>
+
+                      <NameStyled>{item.name.toUpperCase()}</NameStyled>
+
+                      <Description>{item.description}</Description>
+                      <PriceConteiner>
+                        <DiscountConteiner>
+                          <DiscountStyled>{item.discount}%</DiscountStyled>
+                          <DiscountStyled>OFF</DiscountStyled>
+                        </DiscountConteiner>
+                        <InnerPriceStyled>
+                          U$ {item.price.toFixed(2)}
+                        </InnerPriceStyled>
+                        <PriceDescount>
+                          U${" "}
+                          {(
+                            item.price -
+                            item.price * Number("0." + item.discount)
+                          ).toFixed(2)}
+                        </PriceDescount>
+                      </PriceConteiner>
+                    </Name>
+
+                    {/* <NameStyled>{item.name}</NameStyled>
+                    
                     <span>Branb: {item.brand}</span>
-                    <br />
                     <span>Stock: {item.quantity} iten(s)</span>
-                    <br />
                     <PriceStyled>
                       <div>Price:</div>
                       <InnerPriceStyled>
@@ -83,8 +122,7 @@ export default function Carrousel() {
                         ).toFixed(2)}
                       </PriceDescount>
                     </PriceStyled>
-                    <br />
-                    <DiscountStyled>{item.discount}% OFF</DiscountStyled>
+                    <br /> */}
                   </DataDescription>
                 </DataStyled>
               </GeneralDataStyled>

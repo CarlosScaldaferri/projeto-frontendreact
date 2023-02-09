@@ -1,9 +1,11 @@
 import styled from "styled-components";
+import Backgroud from "/Img/general/Background.png";
 
 export const HeaderStyled = styled.header`
   background-size: cover;
   display: flex;
   align-items: center;
+  background-image: url(${Backgroud});
   /* background: linear-gradient(
     180deg,
     rgba(2, 0, 36, 1) 0%,

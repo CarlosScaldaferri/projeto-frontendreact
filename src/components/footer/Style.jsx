@@ -15,6 +15,6 @@ export const FooterStyled = styled.footer`
   padding: 20px;
   font-style: italic;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serifs;
+  font-family: Roboto, Helvetica, sans-serifs;
   color: white;
 `;
