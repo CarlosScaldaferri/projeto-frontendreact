@@ -10,6 +10,7 @@ export const ContainerStyled = styled.div`
 `;
 export const CarouselStyled = styled.div`
   display: flex;
+  flex-grow: 1;
   overflow-x: auto;
   scroll-behavior: smooth;
   ::-webkit-scrollbar {
@@ -23,6 +24,7 @@ export const ButtonAction = styled.img`
   background-color: white;
   opacity: 70%;
   padding: 10px;
+  flex-shrink: 0;
 `;
 
 export const GeneralDataStyled = styled.div`

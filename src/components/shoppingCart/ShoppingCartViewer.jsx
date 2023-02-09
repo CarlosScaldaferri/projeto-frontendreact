@@ -43,30 +43,43 @@ import subtraction from "/Img/general/Subtraction.png";
 import addition from "/Img/general/Addition.png";
 
 export default function ShoppingCartViewer(props) {
-  window.scrollTo(0, 0);
+
 
   const product = JSON.parse(localStorage.getItem("products")).filter(
     (e) => e.id == props.idProduct
   );
 
-  const [shoppingCart, setShoppingCart] = useState([]);
+  console.info('product', product);
+
+  const [shoppingCart, setShoppingCart] = useState(
+    JSON.parse(localStorage.getItem("shoppingcart")) || []
+  );
 
   useEffect(() => {
-    let a = localStorage.getItem("shoppingcart");
-    if (a) {
-      setShoppingCart(a);
-    }
-  }, []);
+    if (
+        props.idProduct && !shoppingCart.find((e) => e.idProduct == props.idProduct)
+    ) {
+      localStorage.setItem(
+          "shoppingcart",
+          JSON.stringify([
+            ...shoppingCart,
+            {
+              idProduct: product[0].id,
+              name: product[0].name,
+              description: product[0].description,
+              quantity: 1,
+              price: product[0].price,
+              discount: product[0].discount,
+              image: product[0].images[0],
+              installment: product[0].installment,
+              priceWithDiscount:
+                  product[0].price -
+                  Number(product[0].price) * Number("0." + product[0].discount),
+            },
+          ])
+      );
 
-  if (
-    Number(props.idProduct) !== 0 &&
-    shoppingCart.filter((e) => {
-      return e.idProduct == props.idProduct;
-    }).length == 0
-  ) {
-    localStorage.setItem(
-      "shoppingcart",
-      JSON.stringify([
+      setShoppingCart([
         ...shoppingCart,
         {
           idProduct: product[0].id,
@@ -78,30 +91,13 @@ export default function ShoppingCartViewer(props) {
           image: product[0].images[0],
           installment: product[0].installment,
           priceWithDiscount:
-            product[0].price -
-            Number(product[0].price) * Number("0." + product[0].discount),
+              product[0].price -
+              Number(product[0].price) * Number("0." + product[0].discount),
         },
-      ])
-    );
-
-    setShoppingCart([
-      ...shoppingCart,
-      {
-        idProduct: product[0].id,
-        name: product[0].name,
-        description: product[0].description,
-        quantity: 1,
-        price: product[0].price,
-        discount: product[0].discount,
-        image: product[0].images[0],
-        installment: product[0].installment,
-        priceWithDiscount:
-          product[0].price -
-          Number(product[0].price) * Number("0." + product[0].discount),
-      },
-    ]);
-    props.setShopingCartNumber(props.shopingCartNumber + 1);
-  }
+      ]);
+      props.setShopingCartNumber(props.shopingCartNumber + 1);
+    }
+  }, [props.idProduct]);
 
   function handleIncrement(product, index, increment) {
     const quantity = JSON.parse(localStorage.getItem("products")).filter(
@@ -139,11 +135,8 @@ export default function ShoppingCartViewer(props) {
     }
   }
 
-  function handleCalcelClick(element) {
+  function handleRemoveClick(element) {
     let a = shoppingCart.filter((e) => e.idProduct !== element.idProduct);
-    if (a.length == 0) {
-      localStorage.removeItem("shoppingcart");
-    }
 
     setShoppingCart(a);
 
@@ -201,7 +194,7 @@ export default function ShoppingCartViewer(props) {
                           ></QuantityIncrement>
                         </QuantityIncrementConteiner>
                       </StockQuantityConteiner>
-                      <ButtonCancel onClick={() => handleCalcelClick(item)}>
+                      <ButtonCancel onClick={() => handleRemoveClick(item)}>
                         Remove
                       </ButtonCancel>
                     </QuantityConteiner>

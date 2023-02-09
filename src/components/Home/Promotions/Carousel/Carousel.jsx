@@ -61,11 +61,12 @@ export default function Carrousel() {
           alt="Scroll Left"
           onClick={handleLeftClick}
         ></ButtonAction>
-        <CarouselStyled ref={carousel}>
+
+        <CarouselStyled ref={carousel} id="scroll-container"  >
           {products.map((item) => {
             return (
-              <GeneralDataStyled key={item.id}>
-                <DataStyled>
+              <GeneralDataStyled>
+                <DataStyled  key={item.id}>
                   <Img src={item.images[0]} alt={item.description} />
                   <DataDescription>
                     <Name>
