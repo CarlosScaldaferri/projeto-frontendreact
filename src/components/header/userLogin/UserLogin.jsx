@@ -1,8 +1,8 @@
 import { LoginImgStyled } from "./style";
-import { LoginContainer } from "./style";
-import { LoginButtons } from "./style";
-import { ButtonLogin } from "./style";
-import { ButtonSingUp } from "./style";
+import { LoginContainer } from "./Style";
+import { LoginButtons } from "./Style";
+import { ButtonLogin } from "./Style";
+import { ButtonSingUp } from "./Style";
 
 export default function UserLogin() {
   return (
