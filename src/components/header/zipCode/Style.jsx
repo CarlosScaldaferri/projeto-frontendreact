@@ -8,6 +8,7 @@ export const ZipCodeButtonStyled = styled.a`
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
   color: #fff;
   font-size: 12px;
+  cursor: pointer;
 `;
 export const ContainerStyled = styled.div`
   display: flex;

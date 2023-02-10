@@ -55,6 +55,7 @@ export const ButtonItemStyled = styled.div`
     background-color: #1e293b;
     color: #fff;
   }
+  cursor: pointer;
 `;
 export const PriceStyled = styled.div`
   display: flex;
@@ -78,6 +79,7 @@ export const ConfirmationButton = styled.div`
     background-color: #1e293b;
     color: #fff;
   }
+  cursor: pointer;
 `;
 export const ContainerMax = styled.div`
   display: flex;

@@ -11,10 +11,12 @@ export const Container = styled.div`
 export const Favorite = styled.img`
   width: 30px;
   height: 30px;
+  cursor: pointer;
 `;
 export const ShoppingCart = styled.img`
   width: 30px;
   height: 30px;
+  cursor: pointer;
 `;
 export const CountShoppingCart = styled.div`
   width: 20px;

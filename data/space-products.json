@@ -9,10 +9,15 @@
       "color": "White",
       "idBrand": 1,
       "quantity": 10,
-      "images": ["/Img/Products/visor/3.png"],
+      "images": [
+        "/Img/Products/gloves/13.png",
+        "/Img/Products/gloves/14.png",
+        "/Img/Products/gloves/15.png",
+        "/Img/Products/gloves/16.png"
+      ],
       "idCategory": 1,
       "discount": 5,
-      "rating": 3,
+      "rating": 5,
       "installment": 8
     },
     {
@@ -24,10 +29,15 @@
       "color": "Orange",
       "idBrand": 1,
       "quantity": 20,
-      "images": ["/Img/Products/visor/3.png"],
+      "images": [
+        "/Img/Products/gloves/9.png",
+        "/Img/Products/gloves/10.png",
+        "/Img/Products/gloves/11.png",
+        "/Img/Products/gloves/12.png"
+      ],
       "idCategory": 1,
       "discount": 5,
-      "rating": 3,
+      "rating": 2,
       "installment": 8
     },
     {
@@ -39,10 +49,15 @@
       "color": "Blue",
       "idBrand": 2,
       "quantity": 13,
-      "images": ["/Img/Products/visor/3.png"],
+      "images": [
+        "/Img/Products/gloves/5.png",
+        "/Img/Products/gloves/6.png",
+        "/Img/Products/gloves/7.png",
+        "/Img/Products/gloves/8.png"
+      ],
       "idCategory": 1,
       "discount": 5,
-      "rating": 3,
+      "rating": 5,
       "installment": 8
     },
     {
@@ -54,10 +69,15 @@
       "color": "Black",
       "idBrand": 3,
       "quantity": 24,
-      "images": ["/Img/Products/visor/3.png"],
+      "images": [
+        "/Img/Products/gloves/1.png",
+        "/Img/Products/gloves/2.png",
+        "/Img/Products/gloves/3.png",
+        "/Img/Products/gloves/4.png"
+      ],
       "idCategory": 1,
       "discount": 5,
-      "rating": 3,
+      "rating": 4,
       "installment": 8
     },
     {
@@ -77,7 +97,7 @@
       ],
       "idCategory": 2,
       "discount": 10,
-      "rating": 3,
+      "rating": 2,
       "installment": 8
     },
     {
@@ -97,7 +117,7 @@
       ],
       "idCategory": 2,
       "discount": 30,
-      "rating": 3,
+      "rating": 5,
       "installment": 8
     },
     {
@@ -117,7 +137,7 @@
       ],
       "idCategory": 2,
       "discount": 5,
-      "rating": 3,
+      "rating": 5,
       "installment": 8
     },
     {
@@ -137,7 +157,7 @@
       ],
       "idCategory": 2,
       "discount": 5,
-      "rating": 3,
+      "rating": 4,
       "installment": 8
     },
     {
@@ -157,7 +177,7 @@
       ],
       "idCategory": 3,
       "discount": 30,
-      "rating": 3,
+      "rating": 5,
       "installment": 8
     },
     {
@@ -177,7 +197,7 @@
       ],
       "idCategory": 3,
       "discount": 5,
-      "rating": 3,
+      "rating": 2,
       "installment": 8
     },
     {
@@ -197,7 +217,7 @@
       ],
       "idCategory": 3,
       "discount": 40,
-      "rating": 3,
+      "rating": 5,
       "installment": 8
     },
     {
@@ -217,7 +237,7 @@
       ],
       "idCategory": 3,
       "discount": 5,
-      "rating": 3,
+      "rating": 5,
       "installment": 8
     },
     {
@@ -237,7 +257,7 @@
       ],
       "idCategory": 4,
       "discount": 5,
-      "rating": 3,
+      "rating": 2,
       "installment": 8
     },
     {
@@ -257,7 +277,7 @@
       ],
       "idCategory": 4,
       "discount": 5,
-      "rating": 3,
+      "rating": 5,
       "installment": 8
     },
     {
@@ -277,7 +297,7 @@
       ],
       "idCategory": 4,
       "discount": 40,
-      "rating": 3,
+      "rating": 5,
       "installment": 8
     },
     {
@@ -297,7 +317,7 @@
       ],
       "idCategory": 4,
       "discount": 5,
-      "rating": 3,
+      "rating": 4,
       "installment": 8
     },
     {
@@ -309,10 +329,15 @@
       "color": "White",
       "idBrand": 1,
       "quantity": 50,
-      "images": ["/Img/Products/visor/3.png"],
+      "images": [
+        "/Img/Products/life suport system/13.png",
+        "/Img/Products/life suport system/14.png",
+        "/Img/Products/life suport system/15.png",
+        "/Img/Products/life suport system/16.png"
+      ],
       "idCategory": 5,
       "discount": 20,
-      "rating": 3,
+      "rating": 4,
       "installment": 8
     },
     {
@@ -324,10 +349,15 @@
       "color": "Orange",
       "idBrand": 1,
       "quantity": 25,
-      "images": ["/Img/Products/visor/3.png"],
+      "images": [
+        "/Img/Products/life suport system/9.png",
+        "/Img/Products/life suport system/10.png",
+        "/Img/Products/life suport system/11.png",
+        "/Img/Products/life suport system/12.png"
+      ],
       "idCategory": 5,
       "discount": 5,
-      "rating": 3,
+      "rating": 5,
       "installment": 8
     },
     {
@@ -339,10 +369,15 @@
       "color": "Blue",
       "idBrand": 2,
       "quantity": 35,
-      "images": ["/Img/Products/visor/3.png"],
+      "images": [
+        "/Img/Products/life suport system/5.png",
+        "/Img/Products/life suport system/6.png",
+        "/Img/Products/life suport system/7.png",
+        "/Img/Products/life suport system/8.png"
+      ],
       "idCategory": 5,
       "discount": 15,
-      "rating": 3,
+      "rating": 2,
       "installment": 8
     },
     {
@@ -354,10 +389,15 @@
       "color": "Black",
       "idBrand": 3,
       "quantity": 12,
-      "images": ["/Img/Products/visor/3.png"],
+      "images": [
+        "/Img/Products/life suport system/1.png",
+        "/Img/Products/life suport system/2.png",
+        "/Img/Products/life suport system/3.png",
+        "/Img/Products/life suport system/4.png"
+      ],
       "idCategory": 5,
       "discount": 50,
-      "rating": 3,
+      "rating": 5,
       "installment": 8
     },
     {
@@ -377,7 +417,7 @@
       ],
       "idCategory": 6,
       "discount": 5,
-      "rating": 3,
+      "rating": 4,
       "installment": 8
     },
     {
@@ -397,7 +437,7 @@
       ],
       "idCategory": 6,
       "discount": 5,
-      "rating": 3,
+      "rating": 4,
       "installment": 8
     },
     {
@@ -417,7 +457,7 @@
       ],
       "idCategory": 6,
       "discount": 30,
-      "rating": 3,
+      "rating": 4,
       "installment": 8
     },
     {
@@ -437,7 +477,7 @@
       ],
       "idCategory": 6,
       "discount": 20,
-      "rating": 3,
+      "rating": 4,
       "installment": 8
     },
     {
@@ -457,7 +497,7 @@
       ],
       "idCategory": 7,
       "discount": 30,
-      "rating": 3,
+      "rating": 2,
       "installment": 8
     },
     {
@@ -477,7 +517,7 @@
       ],
       "idCategory": 7,
       "discount": 20,
-      "rating": 3,
+      "rating": 5,
       "installment": 8
     },
     {
@@ -497,7 +537,7 @@
       ],
       "idCategory": 7,
       "discount": 5,
-      "rating": 3,
+      "rating": 5,
       "installment": 8
     },
     {
@@ -517,7 +557,7 @@
       ],
       "idCategory": 7,
       "discount": 10,
-      "rating": 3,
+      "rating": 5,
       "installment": 8
     }
   ]

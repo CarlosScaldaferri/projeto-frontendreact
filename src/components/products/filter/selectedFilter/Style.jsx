@@ -33,6 +33,7 @@ export const ButtonFilterStyled = styled.div`
   background-repeat: no-repeat;
   background-color: #367af6;
   background-position: right 5px center;
+  cursor: pointer;
 `;
 export const PriceDescription = styled.div``;
 export const ButtonsStyled = styled.div`

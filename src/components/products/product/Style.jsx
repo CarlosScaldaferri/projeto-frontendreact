@@ -12,6 +12,7 @@ export const ContainerStyled = styled.div`
 
 export const ImageContainer = styled.div`
   display: flex;
+  cursor: pointer;
 `;
 export const ProductImages = styled.img`
   width: 100px;
@@ -101,6 +102,7 @@ export const PurchaseButton = styled.button`
   background-position: left 50px center;
   text-align: right;
   padding-right: 60px;
+  cursor: pointer;
 `;
 export const PurchaseButtonContainer = styled.div`
   height: 200px;

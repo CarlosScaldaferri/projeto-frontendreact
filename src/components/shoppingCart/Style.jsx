@@ -196,11 +196,13 @@ export const PurchaseButton = styled.button`
   color: black;
   font-size: x-large;
   border: none;
+  cursor: pointer;
 `;
 export const ButtonCancel = styled.div`
   text-decoration: underline;
   color: black;
   margin: 10px;
+  cursor: pointer;
 `;
 
 export const EmptyShopingCart = styled.div`

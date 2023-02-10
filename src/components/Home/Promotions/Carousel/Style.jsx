@@ -53,6 +53,7 @@ export const NameBrandStyled = styled.span`
 
 export const DataDescription = styled.div`
   display: flex;
+  margin-top: 20px;
 `;
 export const Name = styled.div`
   display: flex;
@@ -124,9 +125,12 @@ export const Description = styled.div`
 `;
 
 export const DiscountConteiner = styled.div`
-  gap: 0;
   display: flex;
-  flex-direction: column;
+  font-size: 2rem;
+  padding: 10px;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
 `;
 export const PriceConteiner = styled.div`
   gap: 30px;

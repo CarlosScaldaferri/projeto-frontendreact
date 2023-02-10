@@ -13,6 +13,7 @@ export const LogoImgStyled = styled.img`
   display: flex;
   justify-self: center;
   border-radius: 50%;
+  cursor: pointer;
 `;
 export const LogoTextStyled = styled.div`
   display: flex;

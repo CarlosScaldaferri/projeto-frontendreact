@@ -24,17 +24,16 @@ import {
 
 export default function Carrousel() {
   const products = JSON.parse(localStorage.getItem("products")).filter(
-    (e) => e.discount > 20
+    (e) => e.discount > 15
   );
 
   const [intervalId, setIntervalId] = useState(null);
-  const startInterval = (interval) => {
+  const startInterval = () => {
     useEffect(() => {
-      alert("a");
       if (!intervalId) {
         const id = setInterval(() => {
           handleRightClick();
-        }, interval);
+        }, 5000);
 
         setIntervalId(id);
       }
@@ -42,7 +41,7 @@ export default function Carrousel() {
     }, [intervalId]);
   };
 
-  startInterval(3000);
+  startInterval();
 
   window.addEventListener("beforeunload", clearInterval(intervalId));
 
@@ -53,6 +52,7 @@ export default function Carrousel() {
     if (isDisabled) {
       return;
     }
+    setIsDisabled(true);
     if (carousel.current) {
       carousel.current.scrollLeft -= carousel.current.offsetWidth;
     }
@@ -64,8 +64,16 @@ export default function Carrousel() {
     if (isDisabled) {
       return;
     }
+    setIsDisabled(true);
     if (carousel.current) {
-      carousel.current.scrollLeft += carousel.current.offsetWidth;
+      if (
+        carousel.current.scrollLeft + carousel.current.offsetWidth ===
+        carousel.current.scrollWidth
+      ) {
+        carousel.current.scrollLeft = 0;
+      } else {
+        carousel.current.scrollLeft += carousel.current.offsetWidth;
+      }
     }
     await new Promise((resolve) => setTimeout(resolve, 1000));
     setIsDisabled(false);
@@ -76,11 +84,13 @@ export default function Carrousel() {
   };
 
   const handleMouseLeave = () => {
-    startInterval(3000);
+    startInterval();
   };
-
   return (
-    <ContainerStyled>
+    <ContainerStyled
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <BodyCarouselStyed>
         <ButtonAction
           src={PrevBtn}
@@ -116,8 +126,7 @@ export default function Carrousel() {
                       <Description>{item.description}</Description>
                       <PriceConteiner>
                         <DiscountConteiner>
-                          <DiscountStyled>{item.discount}%</DiscountStyled>
-                          <DiscountStyled>OFF</DiscountStyled>
+                          <DiscountStyled>{item.discount}% OFF</DiscountStyled>
                         </DiscountConteiner>
                         <InnerPriceStyled>
                           U$ {item.price.toFixed(2)}

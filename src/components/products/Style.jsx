@@ -39,7 +39,7 @@ export const ProductsListStyled = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 100%;
+  width: 749px;
 `;
 export const OrdenationAndSelected = styled.div`
   display: flex;

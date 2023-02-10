@@ -32,6 +32,7 @@ export const CategoryConteiner = styled.div`
   width: fit-content;
   height: fit-content;
   background-color: black;
+  cursor: pointer;
 `;
 export const Img = styled.img`
   width: 130px;

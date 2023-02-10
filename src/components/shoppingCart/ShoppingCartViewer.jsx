@@ -108,37 +108,37 @@ export default function ShoppingCartViewer(props) {
       (product.quantity > 1 && increment == "-") ||
       (product.quantity < quantity && increment == "+")
     ) {
-      setShoppingCart((prevItems) => {
-        const updatedItems = [...prevItems];
-        updatedItems[index] = {
-          idProduct: product.idProduct,
-          name: product.name,
-          description: product.description,
-          quantity:
-            Number(product.quantity) + Number(increment == "-" ? -1 : +1),
-          price: product.price,
-          discount: product.discount,
-          image: product.image,
-          installment: product.installment,
-          priceWithDiscount:
-            product.price -
-            Number(product.price) * Number("0." + product.discount),
-        };
+      const updatedItems = [...shoppingCart];
+      updatedItems[index] = {
+        idProduct: product.idProduct,
+        name: product.name,
+        description: product.description,
+        quantity: Number(product.quantity) + Number(increment == "-" ? -1 : +1),
+        price: product.price,
+        discount: product.discount,
+        image: product.image,
+        installment: product.installment,
+        priceWithDiscount:
+          product.price -
+          Number(product.price) * Number("0." + product.discount),
+      };
 
-        props.setShopingCartNumber(
-          props.shopingCartNumber + Number(increment == "-" ? -1 : +1)
-        );
+      props.setShopingCartNumber(
+        props.shopingCartNumber + Number(increment == "-" ? -1 : +1)
+      );
 
-        return updatedItems;
-      });
+      localStorage.removeItem("shoppingcart");
+      localStorage.setItem("shoppingcart", JSON.stringify(updatedItems));
+
+      setShoppingCart(JSON.parse(localStorage.getItem("shoppingcart")));
     }
   }
 
   function handleRemoveClick(element) {
-    setShoppingCart(
-      shoppingCart.filter((e) => e.idProduct !== element.idProduct)
-    );
-    localStorage.setItem("shoppingcart", JSON.stringify(shoppingCart));
+    localStorage.removeItem("shoppingcart");
+    let a = shoppingCart.filter((e) => e.idProduct !== element.idProduct);
+    setShoppingCart(a);
+    localStorage.setItem("shoppingcart", JSON.stringify(a));
     props.setShopingCartNumber(props.shopingCartNumber - element.quantity);
   }
 
@@ -288,14 +288,13 @@ export default function ShoppingCartViewer(props) {
                     : 0}{" "}
                   x U$
                 </SummaryInstallment>
-                {(shoppingCart?.reduce(
-                  (accumulator, currentValue) =>
-                    accumulator +
-                    currentValue.priceWithDiscount * currentValue.quantity,
-                  0
-                ) / shoppingCart
-                  ? Math.min(...shoppingCart?.map((obj) => obj.installment))
-                  : 0
+                {(
+                  shoppingCart?.reduce(
+                    (accumulator, currentValue) =>
+                      accumulator +
+                      currentValue.priceWithDiscount * currentValue.quantity,
+                    0
+                  ) / Math.min(...shoppingCart?.map((obj) => obj.installment))
                 ).toFixed(2)}{" "}
                 on cred card
               </SummaryInstallmentConteiner>
