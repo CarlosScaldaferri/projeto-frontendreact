@@ -1,4 +1,3 @@
-import loginImg from "../../../../public/img/general/Login.png";
 import { LoginImgStyled } from "./style";
 import { LoginContainer } from "./style";
 import { LoginButtons } from "./style";
@@ -8,7 +7,10 @@ import { ButtonSingUp } from "./style";
 export default function UserLogin() {
   return (
     <LoginContainer>
-      <LoginImgStyled src={loginImg} alt=""></LoginImgStyled>
+      <LoginImgStyled
+        src="https://imgur.com/Q7bF1fB.png"
+        alt=""
+      ></LoginImgStyled>
 
       <LoginButtons>
         <ButtonLogin>Login</ButtonLogin>
