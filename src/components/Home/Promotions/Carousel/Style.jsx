@@ -25,6 +25,7 @@ export const ButtonAction = styled.img`
   opacity: 70%;
   padding: 10px;
   flex-shrink: 0;
+  pointer-events: none;
 `;
 
 export const GeneralDataStyled = styled.div`

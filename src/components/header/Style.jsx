@@ -1,11 +1,10 @@
 import styled from "styled-components";
-// import Backgroud from "/img/general/Background.png";
 
 export const HeaderStyled = styled.header`
   background-size: cover;
   display: flex;
   align-items: center;
-  /* background-image: url(${Backgroud}); */
+  background-image: url("https://imgur.com/aiTODeL.png");
   gap: 20px;
 `;
 export const ItensStyled = styled.div`
