@@ -15,7 +15,7 @@ export const Navigation = styled.nav`
   font-family: Arial, Helvetica, sans-serifs;
   font-weight: bold;
 `;
-export const A = styled.a`
+export const A = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;

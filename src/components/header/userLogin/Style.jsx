@@ -18,12 +18,12 @@ export const LoginButtons = styled.div`
   flex-direction: column;
   gap: 10px;
 `;
-export const ButtonLogin = styled.a`
+export const ButtonLogin = styled.div`
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
   color: #fff;
   font-size: 12px;
 `;
-export const ButtonSingUp = styled.a`
+export const ButtonSingUp = styled.div`
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
   color: #fff;
   font-size: 12px;

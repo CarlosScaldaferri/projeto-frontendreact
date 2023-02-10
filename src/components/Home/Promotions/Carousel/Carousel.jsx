@@ -28,29 +28,55 @@ export default function Carrousel() {
   );
 
   const [intervalId, setIntervalId] = useState(null);
-
   const startInterval = (interval) => {
     useEffect(() => {
+      alert("a");
       if (!intervalId) {
         const id = setInterval(() => {
           handleRightClick();
         }, interval);
+
         setIntervalId(id);
       }
       return () => clearInterval(intervalId);
     }, [intervalId]);
   };
 
-  startInterval(2000000);
+  startInterval(3000);
+
+  window.addEventListener("beforeunload", clearInterval(intervalId));
 
   const carousel = useRef(null);
 
-  const handleLeftClick = () => {
-    carousel.current.scrollLeft -= carousel.current.offsetWidth;
+  const [isDisabled, setIsDisabled] = useState(false);
+  async function handleLeftClick() {
+    if (isDisabled) {
+      return;
+    }
+    if (carousel.current) {
+      carousel.current.scrollLeft -= carousel.current.offsetWidth;
+    }
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    setIsDisabled(false);
+  }
+
+  async function handleRightClick() {
+    if (isDisabled) {
+      return;
+    }
+    if (carousel.current) {
+      carousel.current.scrollLeft += carousel.current.offsetWidth;
+    }
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    setIsDisabled(false);
+  }
+
+  const handleMouseEnter = () => {
+    clearInterval(intervalId);
   };
 
-  const handleRightClick = () => {
-    carousel.current.scrollLeft += carousel.current.offsetWidth;
+  const handleMouseLeave = () => {
+    startInterval(3000);
   };
 
   return (
@@ -62,11 +88,11 @@ export default function Carrousel() {
           onClick={handleLeftClick}
         ></ButtonAction>
 
-        <CarouselStyled ref={carousel} id="scroll-container"  >
-          {products.map((item) => {
+        <CarouselStyled ref={carousel}>
+          {products.map((item, index) => {
             return (
-              <GeneralDataStyled>
-                <DataStyled  key={item.id}>
+              <GeneralDataStyled key={index}>
+                <DataStyled key={item.id}>
                   <Img src={item.images[0]} alt={item.description} />
                   <DataDescription>
                     <Name>
@@ -105,25 +131,6 @@ export default function Carrousel() {
                         </PriceDescount>
                       </PriceConteiner>
                     </Name>
-
-                    {/* <NameStyled>{item.name}</NameStyled>
-                    
-                    <span>Branb: {item.brand}</span>
-                    <span>Stock: {item.quantity} iten(s)</span>
-                    <PriceStyled>
-                      <div>Price:</div>
-                      <InnerPriceStyled>
-                        U$ {item.price.toFixed(2)}
-                      </InnerPriceStyled>
-                      <PriceDescount>
-                        U${" "}
-                        {(
-                          item.price -
-                          item.price * Number("0." + item.discount)
-                        ).toFixed(2)}
-                      </PriceDescount>
-                    </PriceStyled>
-                    <br /> */}
                   </DataDescription>
                 </DataStyled>
               </GeneralDataStyled>

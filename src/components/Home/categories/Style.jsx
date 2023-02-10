@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.a`
+export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,7 +14,7 @@ export const Navigation = styled.nav`
   font-family: Roboto, Helvetica, sans-serifs;
   font-weight: bold;
 `;
-export const A = styled.a`
+export const A = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;

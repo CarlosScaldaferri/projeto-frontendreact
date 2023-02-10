@@ -202,3 +202,21 @@ export const ButtonCancel = styled.div`
   color: black;
   margin: 10px;
 `;
+
+export const EmptyShopingCart = styled.div`
+  width: 300px;
+  height: 200px;
+  background-color: #5967e8;
+  color: white;
+  border-radius: 20px;
+  font-size: xx-large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+`;
+export const A = styled.button`
+  cursor: pointer;
+  font-size: medium;
+`;
