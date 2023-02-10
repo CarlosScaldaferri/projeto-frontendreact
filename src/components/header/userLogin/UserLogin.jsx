@@ -1,4 +1,4 @@
-import { LoginImgStyled } from "./style";
+import { LoginImgStyled } from "./Style";
 import { LoginContainer } from "./Style";
 import { LoginButtons } from "./Style";
 import { ButtonLogin } from "./Style";
