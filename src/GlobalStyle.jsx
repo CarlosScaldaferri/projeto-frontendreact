@@ -1,5 +1,4 @@
 import styled, { createGlobalStyle } from "styled-components";
-import Backgroud from "/Img/general/Background.png";
 
 export const GlobalStyle = createGlobalStyle`
 * {
@@ -14,7 +13,6 @@ export const ContainerStyled = styled.div`
   align-items: centrer;
   justify-content: center;
   background-color: #040056;
-  /* background-image: url(${Backgroud}); */
   background-size: cover;
   background-repeat: no-repeat;
   gap: 30px;

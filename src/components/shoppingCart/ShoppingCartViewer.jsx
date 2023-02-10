@@ -41,9 +41,9 @@ import {
   EmptyShopingCart,
   A,
 } from "./Style";
-import subtraction from "/Img/general/Subtraction.png";
-import addition from "/Img/general/Addition.png";
-import { goToHome } from "../../Router/Coordinator";
+import subtraction from "/img/general/Subtraction.png";
+import addition from "/img/general/Addition.png";
+import { goToHome } from "../../router/Coordinator";
 import { useNavigate } from "react-router-dom";
 
 export default function ShoppingCartViewer(props) {

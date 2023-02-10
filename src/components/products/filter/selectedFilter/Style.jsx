@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import buttonCancel from "../../../../../public/Img/general/ButtonCancel.png";
+import buttonCancel from "../../../../../public/img/general/ButtonCancel.png";
 
 export const Line = styled.div`
   display: flex;

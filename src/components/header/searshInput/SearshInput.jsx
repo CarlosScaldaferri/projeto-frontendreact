@@ -1,7 +1,7 @@
 import { SearshInput } from "./Style";
 import { ImputContainerStyled } from "./Style";
 import { useState } from "react";
-import { goToProducts } from "../../../Router/Coordinator";
+import { goToProducts } from "../../../router/Coordinator";
 import { useNavigate } from "react-router-dom";
 
 export default function SearchInput() {

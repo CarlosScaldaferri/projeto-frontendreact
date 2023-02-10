@@ -10,10 +10,10 @@
       "idBrand": 1,
       "quantity": 10,
       "images": [
-        "/Img/Products/gloves/13.png",
-        "/Img/Products/gloves/14.png",
-        "/Img/Products/gloves/15.png",
-        "/Img/Products/gloves/16.png"
+        "/img/products/gloves/13.png",
+        "/img/products/gloves/14.png",
+        "/img/products/gloves/15.png",
+        "/img/products/gloves/16.png"
       ],
       "idCategory": 1,
       "discount": 5,
@@ -30,10 +30,10 @@
       "idBrand": 1,
       "quantity": 20,
       "images": [
-        "/Img/Products/gloves/9.png",
-        "/Img/Products/gloves/10.png",
-        "/Img/Products/gloves/11.png",
-        "/Img/Products/gloves/12.png"
+        "/img/products/gloves/9.png",
+        "/img/products/gloves/10.png",
+        "/img/products/gloves/11.png",
+        "/img/products/gloves/12.png"
       ],
       "idCategory": 1,
       "discount": 5,
@@ -50,10 +50,10 @@
       "idBrand": 2,
       "quantity": 13,
       "images": [
-        "/Img/Products/gloves/5.png",
-        "/Img/Products/gloves/6.png",
-        "/Img/Products/gloves/7.png",
-        "/Img/Products/gloves/8.png"
+        "/img/products/gloves/5.png",
+        "/img/products/gloves/6.png",
+        "/img/products/gloves/7.png",
+        "/img/products/gloves/8.png"
       ],
       "idCategory": 1,
       "discount": 5,
@@ -70,10 +70,10 @@
       "idBrand": 3,
       "quantity": 24,
       "images": [
-        "/Img/Products/gloves/1.png",
-        "/Img/Products/gloves/2.png",
-        "/Img/Products/gloves/3.png",
-        "/Img/Products/gloves/4.png"
+        "/img/products/gloves/1.png",
+        "/img/products/gloves/2.png",
+        "/img/products/gloves/3.png",
+        "/img/products/gloves/4.png"
       ],
       "idCategory": 1,
       "discount": 5,
@@ -90,10 +90,10 @@
       "idBrand": 1,
       "quantity": 30,
       "images": [
-        "/Img/Products/helmets/5.png",
-        "/Img/Products/helmets/6.png",
-        "/Img/Products/helmets/7.png",
-        "/Img/Products/helmets/8.png"
+        "/img/products/helmets/5.png",
+        "/img/products/helmets/6.png",
+        "/img/products/helmets/7.png",
+        "/img/products/helmets/8.png"
       ],
       "idCategory": 2,
       "discount": 10,
@@ -110,10 +110,10 @@
       "idBrand": 1,
       "quantity": 32,
       "images": [
-        "/Img/Products/helmets/13.png",
-        "/Img/Products/helmets/14.png",
-        "/Img/Products/helmets/15.png",
-        "/Img/Products/helmets/16.png"
+        "/img/products/helmets/13.png",
+        "/img/products/helmets/14.png",
+        "/img/products/helmets/15.png",
+        "/img/products/helmets/16.png"
       ],
       "idCategory": 2,
       "discount": 30,
@@ -130,10 +130,10 @@
       "idBrand": 2,
       "quantity": 25,
       "images": [
-        "/Img/Products/helmets/9.png",
-        "/Img/Products/helmets/10.png",
-        "/Img/Products/helmets/11.png",
-        "/Img/Products/helmets/12.png"
+        "/img/products/helmets/9.png",
+        "/img/products/helmets/10.png",
+        "/img/products/helmets/11.png",
+        "/img/products/helmets/12.png"
       ],
       "idCategory": 2,
       "discount": 5,
@@ -150,10 +150,10 @@
       "idBrand": 3,
       "quantity": 40,
       "images": [
-        "/Img/Products/helmets/1.png",
-        "/Img/Products/helmets/2.png",
-        "/Img/Products/helmets/3.png",
-        "/Img/Products/helmets/4.png"
+        "/img/products/helmets/1.png",
+        "/img/products/helmets/2.png",
+        "/img/products/helmets/3.png",
+        "/img/products/helmets/4.png"
       ],
       "idCategory": 2,
       "discount": 5,
@@ -170,10 +170,10 @@
       "idBrand": 1,
       "quantity": 10,
       "images": [
-        "/Img/Products/boots/5.png",
-        "/Img/Products/boots/6.png",
-        "/Img/Products/boots/7.png",
-        "/Img/Products/boots/8.png"
+        "/img/products/boots/5.png",
+        "/img/products/boots/6.png",
+        "/img/products/boots/7.png",
+        "/img/products/boots/8.png"
       ],
       "idCategory": 3,
       "discount": 30,
@@ -190,10 +190,10 @@
       "idBrand": 1,
       "quantity": 32,
       "images": [
-        "/Img/Products/boots/13.png",
-        "/Img/Products/boots/14.png",
-        "/Img/Products/boots/15.png",
-        "/Img/Products/boots/16.png"
+        "/img/products/boots/13.png",
+        "/img/products/boots/14.png",
+        "/img/products/boots/15.png",
+        "/img/products/boots/16.png"
       ],
       "idCategory": 3,
       "discount": 5,
@@ -210,10 +210,10 @@
       "idBrand": 2,
       "quantity": 3,
       "images": [
-        "/Img/Products/boots/9.png",
-        "/Img/Products/boots/10.png",
-        "/Img/Products/boots/11.png",
-        "/Img/Products/boots/12.png"
+        "/img/products/boots/9.png",
+        "/img/products/boots/10.png",
+        "/img/products/boots/11.png",
+        "/img/products/boots/12.png"
       ],
       "idCategory": 3,
       "discount": 40,
@@ -230,10 +230,10 @@
       "idBrand": 3,
       "quantity": 40,
       "images": [
-        "/Img/Products/boots/1.png",
-        "/Img/Products/boots/2.png",
-        "/Img/Products/boots/3.png",
-        "/Img/Products/boots/4.png"
+        "/img/products/boots/1.png",
+        "/img/products/boots/2.png",
+        "/img/products/boots/3.png",
+        "/img/products/boots/4.png"
       ],
       "idCategory": 3,
       "discount": 5,
@@ -250,10 +250,10 @@
       "idBrand": 1,
       "quantity": 11,
       "images": [
-        "/Img/Products/legs/1.png",
-        "/Img/Products/legs/2.png",
-        "/Img/Products/legs/3.png",
-        "/Img/Products/legs/4.png"
+        "/img/products/legs/1.png",
+        "/img/products/legs/2.png",
+        "/img/products/legs/3.png",
+        "/img/products/legs/4.png"
       ],
       "idCategory": 4,
       "discount": 5,
@@ -270,10 +270,10 @@
       "idBrand": 1,
       "quantity": 22,
       "images": [
-        "/Img/Products/legs/5.png",
-        "/Img/Products/legs/6.png",
-        "/Img/Products/legs/7.png",
-        "/Img/Products/legs/8.png"
+        "/img/products/legs/5.png",
+        "/img/products/legs/6.png",
+        "/img/products/legs/7.png",
+        "/img/products/legs/8.png"
       ],
       "idCategory": 4,
       "discount": 5,
@@ -290,10 +290,10 @@
       "idBrand": 2,
       "quantity": 30,
       "images": [
-        "/Img/Products/legs/9.png",
-        "/Img/Products/legs/10.png",
-        "/Img/Products/legs/11.png",
-        "/Img/Products/legs/12.png"
+        "/img/products/legs/9.png",
+        "/img/products/legs/10.png",
+        "/img/products/legs/11.png",
+        "/img/products/legs/12.png"
       ],
       "idCategory": 4,
       "discount": 40,
@@ -310,10 +310,10 @@
       "idBrand": 3,
       "quantity": 2,
       "images": [
-        "/Img/Products/legs/13.png",
-        "/Img/Products/legs/14.png",
-        "/Img/Products/legs/15.png",
-        "/Img/Products/legs/16.png"
+        "/img/products/legs/13.png",
+        "/img/products/legs/14.png",
+        "/img/products/legs/15.png",
+        "/img/products/legs/16.png"
       ],
       "idCategory": 4,
       "discount": 5,
@@ -330,10 +330,10 @@
       "idBrand": 1,
       "quantity": 50,
       "images": [
-        "/Img/Products/life suport system/13.png",
-        "/Img/Products/life suport system/14.png",
-        "/Img/Products/life suport system/15.png",
-        "/Img/Products/life suport system/16.png"
+        "/img/products/life suport system/13.png",
+        "/img/products/life suport system/14.png",
+        "/img/products/life suport system/15.png",
+        "/img/products/life suport system/16.png"
       ],
       "idCategory": 5,
       "discount": 20,
@@ -350,10 +350,10 @@
       "idBrand": 1,
       "quantity": 25,
       "images": [
-        "/Img/Products/life suport system/9.png",
-        "/Img/Products/life suport system/10.png",
-        "/Img/Products/life suport system/11.png",
-        "/Img/Products/life suport system/12.png"
+        "/img/products/life suport system/9.png",
+        "/img/products/life suport system/10.png",
+        "/img/products/life suport system/11.png",
+        "/img/products/life suport system/12.png"
       ],
       "idCategory": 5,
       "discount": 5,
@@ -370,10 +370,10 @@
       "idBrand": 2,
       "quantity": 35,
       "images": [
-        "/Img/Products/life suport system/5.png",
-        "/Img/Products/life suport system/6.png",
-        "/Img/Products/life suport system/7.png",
-        "/Img/Products/life suport system/8.png"
+        "/img/products/life suport system/5.png",
+        "/img/products/life suport system/6.png",
+        "/img/products/life suport system/7.png",
+        "/img/products/life suport system/8.png"
       ],
       "idCategory": 5,
       "discount": 15,
@@ -390,10 +390,10 @@
       "idBrand": 3,
       "quantity": 12,
       "images": [
-        "/Img/Products/life suport system/1.png",
-        "/Img/Products/life suport system/2.png",
-        "/Img/Products/life suport system/3.png",
-        "/Img/Products/life suport system/4.png"
+        "/img/products/life suport system/1.png",
+        "/img/products/life suport system/2.png",
+        "/img/products/life suport system/3.png",
+        "/img/products/life suport system/4.png"
       ],
       "idCategory": 5,
       "discount": 50,
@@ -410,10 +410,10 @@
       "idBrand": 1,
       "quantity": 1,
       "images": [
-        "/Img/Products/visor/5.png",
-        "/Img/Products/visor/6.png",
-        "/Img/Products/visor/7.png",
-        "/Img/Products/visor/8.png"
+        "/img/products/visor/5.png",
+        "/img/products/visor/6.png",
+        "/img/products/visor/7.png",
+        "/img/products/visor/8.png"
       ],
       "idCategory": 6,
       "discount": 5,
@@ -430,10 +430,10 @@
       "idBrand": 1,
       "quantity": 6,
       "images": [
-        "/Img/Products/visor/13.png",
-        "/Img/Products/visor/14.png",
-        "/Img/Products/visor/15.png",
-        "/Img/Products/visor/16.png"
+        "/img/products/visor/13.png",
+        "/img/products/visor/14.png",
+        "/img/products/visor/15.png",
+        "/img/products/visor/16.png"
       ],
       "idCategory": 6,
       "discount": 5,
@@ -450,10 +450,10 @@
       "idBrand": 2,
       "quantity": 36,
       "images": [
-        "/Img/Products/visor/9.png",
-        "/Img/Products/visor/10.png",
-        "/Img/Products/visor/11.png",
-        "/Img/Products/visor/12.png"
+        "/img/products/visor/9.png",
+        "/img/products/visor/10.png",
+        "/img/products/visor/11.png",
+        "/img/products/visor/12.png"
       ],
       "idCategory": 6,
       "discount": 30,
@@ -470,10 +470,10 @@
       "idBrand": 3,
       "quantity": 45,
       "images": [
-        "/Img/Products/visor/1.png",
-        "/Img/Products/visor/2.png",
-        "/Img/Products/visor/3.png",
-        "/Img/Products/visor/4.png"
+        "/img/products/visor/1.png",
+        "/img/products/visor/2.png",
+        "/img/products/visor/3.png",
+        "/img/products/visor/4.png"
       ],
       "idCategory": 6,
       "discount": 20,
@@ -490,10 +490,10 @@
       "idBrand": 1,
       "quantity": 15,
       "images": [
-        "/Img/Products/space suit/9.png",
-        "/Img/Products/space suit/10.png",
-        "/Img/Products/space suit/11.png",
-        "/Img/Products/space suit/12.png"
+        "/img/products/space suit/9.png",
+        "/img/products/space suit/10.png",
+        "/img/products/space suit/11.png",
+        "/img/products/space suit/12.png"
       ],
       "idCategory": 7,
       "discount": 30,
@@ -510,10 +510,10 @@
       "idBrand": 1,
       "quantity": 25,
       "images": [
-        "/Img/Products/space suit/13.png",
-        "/Img/Products/space suit/14.png",
-        "/Img/Products/space suit/15.png",
-        "/Img/Products/space suit/16.png"
+        "/img/products/space suit/13.png",
+        "/img/products/space suit/14.png",
+        "/img/products/space suit/15.png",
+        "/img/products/space suit/16.png"
       ],
       "idCategory": 7,
       "discount": 20,
@@ -530,10 +530,10 @@
       "idBrand": 2,
       "quantity": 5,
       "images": [
-        "/Img/Products/space suit/5.png",
-        "/Img/Products/space suit/6.png",
-        "/Img/Products/space suit/7.png",
-        "/Img/Products/space suit/8.png"
+        "/img/products/space suit/5.png",
+        "/img/products/space suit/6.png",
+        "/img/products/space suit/7.png",
+        "/img/products/space suit/8.png"
       ],
       "idCategory": 7,
       "discount": 5,
@@ -550,10 +550,10 @@
       "idBrand": 3,
       "quantity": 4,
       "images": [
-        "/Img/Products/space suit/1.png",
-        "/Img/Products/space suit/2.png",
-        "/Img/Products/space suit/3.png",
-        "/Img/Products/space suit/4.png"
+        "/img/products/space suit/1.png",
+        "/img/products/space suit/2.png",
+        "/img/products/space suit/3.png",
+        "/img/products/space suit/4.png"
       ],
       "idCategory": 7,
       "discount": 10,

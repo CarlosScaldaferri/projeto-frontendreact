@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { Navigation } from "./Style";
 import { A, CategoryConteiner, Img, Container } from "./Style";
-import { goToProducts } from "../../../Router/Coordinator";
+import { goToProducts } from "../../../router/Coordinator";
 
 export default function Categories() {
   const navigate = useNavigate();

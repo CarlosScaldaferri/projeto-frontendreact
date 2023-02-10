@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Promotions from "/Img/general/Promotions.png";
+import Promotions from "/img/general/Promotions.png";
 
 export const ContainerStyled = styled.div`
   display: flex;

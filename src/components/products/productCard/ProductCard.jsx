@@ -9,7 +9,7 @@ import {
 } from "./Style";
 import { StarsRating } from "../../starsRating/StarsRating";
 import { useNavigate } from "react-router-dom";
-import { goToProduct } from "../../../Router/Coordinator";
+import { goToProduct } from "../../../router/Coordinator";
 
 export default function ProductCard(props) {
   const navigate = useNavigate();

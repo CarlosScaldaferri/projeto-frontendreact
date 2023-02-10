@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import purchaseImg from "/Img/general/ShoppingCart.png";
+import purchaseImg from "/img/general/ShoppingCart.png";
 
 export const ContainerStyled = styled.div`
   display: flex;

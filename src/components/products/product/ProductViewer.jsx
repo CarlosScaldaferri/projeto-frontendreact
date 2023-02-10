@@ -28,9 +28,9 @@ import {
   SimilarProducts,
 } from "./Style";
 import { StarsRating } from "../../starsRating/StarsRating";
-import favorite from "/Img/general/Favorite.png";
+import favorite from "/img/general/Favorite.png";
 import ProductCard from "../productCard/ProductCard";
-import { goToShoppingCart } from "../../../Router/Coordinator";
+import { goToShoppingCart } from "../../../router/Coordinator";
 import { useNavigate } from "react-router-dom";
 export default function ProductViewer(props) {
   window.scrollTo(0, 0);
@@ -104,7 +104,7 @@ export default function ProductViewer(props) {
                 ).toFixed(2)}
             </ProductPriceContainer>
             <CredCardInstallment>
-              <CredCard src="/Img/general/CredCard.png"></CredCard>
+              <CredCard src="/img/general/CredCard.png"></CredCard>
               <InstallmentContainer>
                 {product[0].installment} X U${" "}
                 {(Number(product[0].price) -
