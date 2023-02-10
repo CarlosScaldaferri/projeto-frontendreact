@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Promotions from "/img/general/Promotions.png";
 
 export const ContainerStyled = styled.div`
   display: flex;
@@ -92,7 +91,7 @@ export const TytleStyled = styled.div`
 export const BodyCarouselStyed = styled.div`
   display: flex;
   align-items: center;
-  background-image: url(${Promotions});
+  background-image: url("https://imgur.com/00ARPsL.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 `;

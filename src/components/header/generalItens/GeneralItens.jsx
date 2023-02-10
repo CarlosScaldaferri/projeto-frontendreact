@@ -1,8 +1,6 @@
 import { Container, CountShoppingCart, ShoppingCartConteiner } from "./Style";
 import { Favorite } from "./Style";
 import { ShoppingCart } from "./Style";
-import FavoriteImg from "../../../../public/img/general/Favorite.png";
-import ShoppingCartImg from "../../../../public/img/general/ShoppingCart.png";
 import { goToShoppingCart } from "../../../router/Coordinator";
 import { useNavigate } from "react-router-dom";
 
@@ -14,10 +12,10 @@ export default function GeneralItens(props) {
 
   return (
     <Container>
-      <Favorite src={FavoriteImg} alt=""></Favorite>
+      <Favorite src="https://imgur.com/msfaHaA.png" alt=""></Favorite>
       <ShoppingCartConteiner>
         <ShoppingCart
-          src={ShoppingCartImg}
+          src="https://imgur.com/FkggBfL.png"
           onClick={handleShoppingCartClick}
           alt=""
         ></ShoppingCart>

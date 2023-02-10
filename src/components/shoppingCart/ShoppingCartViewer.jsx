@@ -41,8 +41,7 @@ import {
   EmptyShopingCart,
   A,
 } from "./Style";
-import subtraction from "/img/general/Subtraction.png";
-import addition from "/img/general/Addition.png";
+
 import { goToHome } from "../../router/Coordinator";
 import { useNavigate } from "react-router-dom";
 
@@ -196,14 +195,14 @@ export default function ShoppingCartViewer(props) {
 
                             <QuantityIncrementConteiner>
                               <QuantityIncrement
-                                src={subtraction}
+                                src="https://imgur.com/MfuQ2hM.png"
                                 onClick={() =>
                                   handleIncrement(item, index, "-")
                                 }
                               ></QuantityIncrement>
                               <Quantity>{item.quantity}</Quantity>
                               <QuantityIncrement
-                                src={addition}
+                                src="https://imgur.com/ar7EUHz.png"
                                 onClick={() =>
                                   handleIncrement(item, index, "+")
                                 }

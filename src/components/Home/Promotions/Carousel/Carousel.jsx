@@ -7,8 +7,6 @@ import { DataStyled } from "./Style";
 import { NameStyled } from "./Style";
 import { Img } from "./Style";
 import { DataDescription } from "./Style";
-import NextBtn from "../../../../../public/img/general/Next.png";
-import PrevBtn from "../../../../../public/img/general/Prev.png";
 import { Description } from "./Style";
 import React, { useState, useEffect } from "react";
 import { BodyCarouselStyed } from "./Style";
@@ -84,7 +82,7 @@ export default function Carrousel() {
     <ContainerStyled>
       <BodyCarouselStyed>
         <ButtonAction
-          src={PrevBtn}
+          src="https://imgur.com/8XAJLxq.png"
           alt="Scroll Left"
           onClick={handleLeftClick}
         ></ButtonAction>
@@ -138,7 +136,7 @@ export default function Carrousel() {
           })}
         </CarouselStyled>
         <ButtonAction
-          src={NextBtn}
+          src="https://imgur.com/4ihFlup.png"
           alt="Scroll Right"
           onClick={handleRightClick}
         ></ButtonAction>

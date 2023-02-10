@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import purchaseImg from "/img/general/ShoppingCart.png";
 
 export const ContainerStyled = styled.div`
   display: flex;
@@ -96,7 +95,7 @@ export const PurchaseButton = styled.button`
   color: white;
   font-size: x-large;
   border: none;
-  background-image: url(${purchaseImg});
+  background-image: url("https://imgur.com/FkggBfL.png");
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: left 50px center;

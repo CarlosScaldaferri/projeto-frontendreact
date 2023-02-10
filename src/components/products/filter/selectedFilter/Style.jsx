@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import buttonCancel from "../../../../../public/img/general/ButtonCancel.png";
 
 export const Line = styled.div`
   display: flex;
@@ -28,7 +27,7 @@ export const ButtonFilterStyled = styled.div`
   border-radius: 6px;
   border: none;
   color: #fff;
-  background-image: url(${buttonCancel});
+  background-image: url("https://imgur.com/xNTFegf.png");
   background-size: 10px 10px;
   background-repeat: no-repeat;
   background-color: #367af6;

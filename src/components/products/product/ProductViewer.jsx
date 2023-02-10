@@ -28,7 +28,6 @@ import {
   SimilarProducts,
 } from "./Style";
 import { StarsRating } from "../../starsRating/StarsRating";
-import favorite from "/img/general/Favorite.png";
 import ProductCard from "../productCard/ProductCard";
 import { goToShoppingCart } from "../../../router/Coordinator";
 import { useNavigate } from "react-router-dom";
@@ -74,7 +73,7 @@ export default function ProductViewer(props) {
           </ImagesContainer>
           <ProductFavoriteContainer>
             <ProductMainImage src={mainImage}></ProductMainImage>
-            <FavoriteImage src={favorite}></FavoriteImage>
+            <FavoriteImage src="https://imgur.com/msfaHaA.png"></FavoriteImage>
           </ProductFavoriteContainer>
         </ProductImagesContainer>
 
@@ -104,7 +103,7 @@ export default function ProductViewer(props) {
                 ).toFixed(2)}
             </ProductPriceContainer>
             <CredCardInstallment>
-              <CredCard src="/img/general/CredCard.png"></CredCard>
+              <CredCard src="https://imgur.com/HTnnbUE.png"></CredCard>
               <InstallmentContainer>
                 {product[0].installment} X U${" "}
                 {(Number(product[0].price) -
