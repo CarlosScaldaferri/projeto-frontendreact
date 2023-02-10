@@ -1,6 +1,6 @@
 import { GlobalStyle } from "./GlobalStyle";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
 import categoriesDB from "../data/categories.json";
 import productsDB from "../data/space-products.json";
 import brandsDB from "../data/Brands.json";

@@ -28,6 +28,7 @@ export default function Carrousel() {
   );
 
   const [intervalId, setIntervalId] = useState(null);
+
   const startInterval = () => {
     useEffect(() => {
       if (!intervalId) {
@@ -79,18 +80,8 @@ export default function Carrousel() {
     setIsDisabled(false);
   }
 
-  const handleMouseEnter = () => {
-    clearInterval(intervalId);
-  };
-
-  const handleMouseLeave = () => {
-    startInterval();
-  };
   return (
-    <ContainerStyled
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
+    <ContainerStyled>
       <BodyCarouselStyed>
         <ButtonAction
           src={PrevBtn}

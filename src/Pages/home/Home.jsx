@@ -1,7 +1,7 @@
-import Promotions from "../../components/Home/Promotions/Promotions";
-import BestProducts from "../../components/Home/BestProducts/BestProducts";
+import Promotions from "../../components/home/promotions/Promotions";
+import BestProducts from "../../components/home/bestProducts/BestProducts";
 import { HomeStyled } from "./style";
-import Categories from "../../components/Home/categories/Categories";
+import Categories from "../../components/home/categories/Categories";
 
 export default function Home() {
   return (
