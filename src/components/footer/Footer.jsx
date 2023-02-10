@@ -6,7 +6,7 @@ import {
   ContactsTitle,
   DevelopedBy,
   AboutContacts,
-} from "./style";
+} from "./Style";
 
 export default function Footer() {
   return (
